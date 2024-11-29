@@ -31,3 +31,29 @@ pip install pyspark
 
 python analyze_aeroflot.py
    
+
+
+5. Загрузка данных.
+ Создайте директорию для данных и загрузите исторические данные по акциям (например,
+Apple):
+ ```bash
+mkdir ~/spark_data
+ cd ~/spark_data
+ wget -O AAPL.csv
+https://query1.finance.yahoo.com/v7/finance/download/AAPL?period1=0&period2=9999999999&in
+terval=1d&events=history&includeAdjustedClose=true
+ ```
+или скачать по ссылке необходимый файл в Downloads и скопировать фвайл в необходимую
+директорию.
+ ```bash
+cp ~/Downloads/ AAPL.csv ~/spark_data
+ ```
+6. Запуск Spark и выполнение простейших операций:
+ Запустите PySpark:
+ ```bash
+ pyspark
+ ```
+ В интерактивной оболочке PySpark выполните следующие операции:
+ a. Загрузка данных.
+ ```python
+ df = spark.rea

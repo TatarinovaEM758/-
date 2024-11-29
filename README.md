@@ -1,6 +1,8 @@
 sudo apt update
 sudo apt install openjdk-11-jdk
 
+sudo apt install python3 python3-pip
+
 
 wget https://downloads apache.org/spark/spark-3.2.0/spark-3.2.0-bin-hadoop3.2.tgz
    tar -xvf spark-3.2.0-bin-hadoop3.2.tgz
